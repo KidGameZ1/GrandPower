@@ -23,7 +23,7 @@ public class ModBlock {
     
     public static final RegistryObject<Block> TIME_BLOCK = registerBlock("time_block",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.SAND)
-                    .destroyTime(100).requiresCorrectToolForDrops(),
+                    .requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)), ModCreativeModeTab.LOST_POWER);
             
     
