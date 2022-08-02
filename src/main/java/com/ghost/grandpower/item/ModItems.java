@@ -16,10 +16,10 @@ public class ModItems {
 
 
     public static RegistryObject<Item> TIME_CHUNK = ITEMS.register("time_chunk",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.LOST_POWER)));
 
     public static RegistryObject<Item> TIME_GEM = ITEMS.register("time_gem",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.LOST_POWER)));
 
 
 
