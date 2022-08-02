@@ -1,5 +1,9 @@
 {
   "item.grandpower.time_chunk": "Time Chunk",
 
-  "item.grandpower.time_gem": "Time Gem"
+  "item.grandpower.time_gem": "Time Gem",
+
+
+
+  "itemgroup.grandpower": "Lost Power"
 }
