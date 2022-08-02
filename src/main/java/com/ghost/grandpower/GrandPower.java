@@ -1,5 +1,6 @@
 package com.ghost.grandpower;
 
+import com.ghost.grandpower.block.ModBlock;
 import com.ghost.grandpower.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,6 +26,7 @@ public class GrandPower
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlock.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);
