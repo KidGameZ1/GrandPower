@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "T": {
+      "item": "grandpower:time_gem"
+    },
+
+    "C": {
+      "item": "minecraft:clock"
+    }
+
+  },
+  "pattern": [
+    "OOT",
+    "OCO",
+    "OOO"
+  ],
+  "result": {
+    "item": "grandpower:dark_clock"
+  }
+}

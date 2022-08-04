@@ -1,7 +1,8 @@
 package com.ghost.grandpower.item;
 
 import com.ghost.grandpower.GrandPower;
-import com.ghost.grandpower.item.custom.DarkClockItem;
+import com.ghost.grandpower.item.custom.ReversedClockItem;
+import com.ghost.grandpower.item.custom.ReversedClockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
@@ -23,7 +24,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.LOST_POWER)));
 
     public static RegistryObject<Item> DARK_CLOCK = ITEMS.register("dark_clock",
-            () -> new DarkClockItem(new Item.Properties().tab(ModCreativeModeTab.LOST_POWER).stacksTo(1)));;
+            () -> new ReversedClockItem(new Item.Properties().tab(ModCreativeModeTab.LOST_POWER).stacksTo(1)));;
 
 
 
