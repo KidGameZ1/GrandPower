@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "T": {
+      "item": "grandpower:time_gem"
+    }
+  },
+  "pattern": [
+    "OOO",
+    "OTO",
+    "OOO"
+  ],
+  "result": {
+    "item": "grandpower:time_block"
+  }
+}
