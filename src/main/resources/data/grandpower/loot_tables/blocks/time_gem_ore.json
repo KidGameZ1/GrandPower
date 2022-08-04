@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "grandpower.time_gem_ore"
+              "name": "grandpower:time_gem_ore"
             },
             {
               "type": "minecraft:item",
@@ -47,7 +47,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "grandpower.time_chunk"
+              "name": "grandpower:time_chunk"
             }
           ]
         }
