@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "grandpower:block/time_block"
+    "all": "grandpower:block/time_ore"
   }
 }
