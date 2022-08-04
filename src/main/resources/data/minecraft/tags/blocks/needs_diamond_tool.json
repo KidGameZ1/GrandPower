@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "grandpower.time_gem_ore"
+    "grandpower.time_gem_ore",
+    "grandpower.time_block:zircon_block"
   ]
 }
