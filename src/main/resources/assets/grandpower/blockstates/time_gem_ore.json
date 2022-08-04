@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "grandpower:block/time_block" }
+    "": { "model": "grandpower:block/time_gem_ore" }
   }
 }
