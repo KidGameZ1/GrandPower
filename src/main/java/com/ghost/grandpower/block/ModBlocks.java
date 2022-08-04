@@ -27,12 +27,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> TIME_GEM_ORE = registerBlock("time_gem_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops(),
+                    .strength(5.9f).requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)), ModCreativeModeTab.LOST_POWER);
 
     public static final RegistryObject<Block> TIME_BLOCK = registerBlock("time_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.LOST_POWER);
+                    .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.LOST_POWER);
 
 
 
