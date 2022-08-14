@@ -3,7 +3,7 @@
 	"parent": "builtin/entity",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "block/MainArmtex"
+		"0": "time_claw"
 	},
 	"elements": [
 		{
