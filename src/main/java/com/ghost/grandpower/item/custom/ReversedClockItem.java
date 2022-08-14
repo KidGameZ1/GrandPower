@@ -8,12 +8,14 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
+
 
 import java.util.List;
 
@@ -22,8 +24,21 @@ public class ReversedClockItem extends Item {
         super(properties);
     }
 
+    private void playerDead(Player player){
+
+        if (player.isDeadOrDying()){
+
+            player.setHealth(player.getMaxHealth());
+
+        }
+    }
+
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+
+
+
+
         if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
             if (player.isHurt()){
                 player.heal(player.getMaxHealth());
@@ -53,7 +68,8 @@ public class ReversedClockItem extends Item {
     }
 
     private int getRandomNumber() {
-        return RandomSource.createNewThreadLocalInstance().nextInt(10);
+        return RandomSource.createNewThreadLocalInstance().nextInt(999);
     }
+
 
 }
