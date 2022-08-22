@@ -7,6 +7,7 @@ import io.netty.util.Attribute;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,7 +16,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS,  GrandPower.MOD_ID);
-    
+ 
 
 
     public static RegistryObject<Item> TIME_CHUNK = ITEMS.register("time_chunk",
@@ -27,6 +28,10 @@ public class ModItems {
 
     public static RegistryObject<Item> DARK_CLOCK = ITEMS.register("dark_clock",
             () -> new ReversedClockItem(new Item.Properties().tab(ModCreativeModeTab.LOST_POWER).stacksTo(1)));
+
+    public static RegistryObject<Item> TIME_SWORD = ITEMS.register("time_sword",
+            () -> new SwordItem(ModTiers.TIME, 2, 3,
+                     new TimeSwordItem.Properties().tab(ModCreativeModeTab.LOST_POWER).stacksTo(1)));
 
 
     public static final RegistryObject<Item> CITRINE_HELMET = ITEMS.register("citrine_helmet",
